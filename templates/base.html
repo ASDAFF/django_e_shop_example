@@ -1,0 +1,441 @@
+{% load static %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="ru" class="theme-main">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'templates/main/css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'templates/main/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'templates/main/css/jquery.bxslider.css' %}" />
+    <link rel="stylesheet" href="{% static 'templates/main/css/jquery-ui.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'templates/main/css/owl.carousel.css' %}" />
+    <!--[if lte IE 8]><link href= "{% static 'templates/main/css/ie.css' %}" rel= "stylesheet" media= "all" /><![endif]-->
+    <!--[if lt IE 9]>
+		<script src="{% static 'templates/main/js/html5shiv.min.js' %}"></script>
+		<script src="{% static 'templates/main/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+    <script src="{% static 'templates/main/js/jquery.min.js' %}"></script>
+    <script src="{% static 'templates/main/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'templates/main/js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'templates/main/js/jquery.bxslider.min.js' %}"></script>
+    <script src="{% static 'templates/main/js/jquery.form-validator.min.js' %}"></script>
+    <script src="{% static 'templates/main/js/additional-methods.min.js' %}"></script>
+    <script src="{% static 'templates/main/js/player_api' %}"></script>
+    <script src="{% static 'templates/main/js/script.js' %}"></script>
+
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="{% static 'templates/main/favicon.ico' %}">
+    <link rel="shortcut icon" href="{% static 'templates/main/favicon.ico">
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+        {% include 'header.html' %}
+
+        <!-- page -->
+        <div class="page">
+            <!-- breadcrumbs -->
+            <nav class="breadcrumbs">
+                <div class="inner">
+                    <span itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="" itemprop="url"><span itemprop="title">Главная</span>
+                    </a>
+                    <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="" itemprop="url"><span itemprop="title">Каталог</span>
+                    </a>
+                    </span>
+                    <span itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+							<span itemprop="title">текстовая информация</span>
+                    </span>
+                    </span>
+                </div>
+            </nav>
+            <!-- /breadcrumbs -->
+            {% block content %}
+            {% endblock content %}
+        </div>
+        <!-- /page -->
+    </div>
+    <!-- /wrap -->
+    <!-- footer -->
+    {% include 'footer.html' %}
+    <!-- /footer -->
+    <!-- popup city -->
+    <div id="popup-city">
+        <div class="popup-city">
+            <div class="title">Ваш город - <span>Санкт-Петербург</span>?</div>
+            <div class="btn-block">
+                <a href="" class="btn btn-light">Да</a>
+                <a href="" class="btn btn-light btn-city-select">Выбрать другой город</a>
+            </div>
+            <p>От выбранного города зависят цены, наличие товара и способа досавки</p>
+        </div>
+    </div>
+    <!-- /popup city -->
+    <!-- popup city -->
+    <div id="popup-city-select">
+        <div class="popup-city-select">
+            <div class="title">Выберите ваш регион</div>
+            <ul>
+                <li><a href="">Москва</a>
+                </li>
+                <li><a href="">Екатеринбург</a>
+                </li>
+                <li><a href="">Ростов на Дону</a>
+                </li>
+                <li><a href="">Нижний Новгород</a>
+                </li>
+                <li><a href="">Казань</a>
+                </li>
+                <li><a href="">Челябинск</a>
+                </li>
+                <li><a href="">Самара</a>
+                </li>
+                <li><a href="">Новосибирск</a>
+                </li>
+                <li><a href="">Краснодар</a>
+                </li>
+                <li><a href="">Воронеж</a>
+                </li>
+                <li><a href="">пермь</a>
+                </li>
+                <li><a href="">Красноярск</a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /popup city -->
+    <!-- popup callback -->
+    <div id="popup-callback">
+        <form action="/" class="frm-callback frm-popup" id="callbackform">
+            <div class="row">
+                <label>Имя*</label>
+                <input type="text">
+            </div>
+            <div class="row">
+                <label>Тел с кодом города*</label>
+                <input type="text" name="phone">
+            </div>
+            <div class="row">
+                <label>Время звонка</label>
+                <input type="text">
+            </div>
+            <div class="row">
+                <label>Сообщение</label>
+                <input type="text">
+            </div>
+            <div class="row-submit">
+                <input type="submit" value="Заказать звонок">
+            </div>
+
+        </form>
+    </div>
+    <!-- /popup callback -->
+    <!-- popup cart -->
+    <div id="popup-cart">
+        <div class="popup-cart">
+            <div class="cart-item">
+                <div class="photo-block">
+                    <a href="" class="photo">
+                        <img src="{% static 'templates/main' %}/img/popup-cart.jpg" alt="">
+                    </a>
+                </div>
+                <div class="count count-mobile"><span>1 </span>Кол-во</div>
+                <h2><a href="">ASpro-2700 окрасочный аппарат (агрегат)</a></h2>
+                <p>Мы гарантируем Вам качество и самую низкую цену в России на окрасочное оборудование."
+                    <br>Почему выгодно купить оборудование для окраски у нас? Более 12 лет с неизменным именем на рынке окрасочного оборудования!</p>
+            </div>
+            <div class="btn-block">
+                <div class="count"><span>1 </span>Кол-во</div>
+                <a href="" class="btn btn-dark">Продолжить покупки</a>
+                <a href="" class="btn">Оформить заказ</a>
+            </div>
+        </div>
+        <p>Обычно в комплекте покупают</p>
+        <!-- cat item slider -->
+        <div class="cat-item-slider">
+            <div class="slider">
+                <div class="item">
+                    <div class="cat-item item-stred" data-st="Sale">
+                        <div class="inner">
+                            <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                            </div>
+                            <a href="" class="photo-block">
+                                <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                            </a>
+                            <div class="rate-block">
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="empty"></span>
+                                <span class="total">225</span>
+                            </div>
+                            <div class="price-block">
+                                150 000 <span class="r">a</span>
+                            </div>
+                            <div class="actions-block">
+                                <a href="" class="btn-cart hidden"></a>
+                                <div class="field-counter hidden">
+                                    <a href="" class="plus"></a>
+                                    <a href="" class="minus"></a>
+                                    <input type="text" value="1">
+                                </div>
+                                <div class="stock-info instock">В наличии</div>
+                            </div>
+                            <a href="" class="btn btn-block btn-buy">Купить</a>
+                            <div class="moving-block hidden">
+                                <a href="" class="btn-compare">К сравнению</a>
+                                <a href="" class="btn-favorites">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cat-item item-stred" data-st="Sale">
+                        <div class="inner">
+                            <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                            </div>
+                            <a href="" class="photo-block">
+                                <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                            </a>
+                            <div class="rate-block">
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="empty"></span>
+                                <span class="total">225</span>
+                            </div>
+                            <div class="price-block">
+                                150 000 <span class="r">a</span>
+                            </div>
+                            <div class="actions-block">
+                                <a href="" class="btn-cart hidden"></a>
+                                <div class="field-counter hidden">
+                                    <a href="" class="plus"></a>
+                                    <a href="" class="minus"></a>
+                                    <input type="text" value="1">
+                                </div>
+                                <div class="stock-info instock">В наличии</div>
+                            </div>
+                            <a href="" class="btn btn-block btn-buy">Купить</a>
+                            <div class="moving-block hidden">
+                                <a href="" class="btn-compare">К сравнению</a>
+                                <a href="" class="btn-favorites">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cat-item item-stred" data-st="Sale">
+                        <div class="inner">
+                            <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                            </div>
+                            <a href="" class="photo-block">
+                                <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                            </a>
+                            <div class="rate-block">
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="empty"></span>
+                                <span class="total">225</span>
+                            </div>
+                            <div class="price-block">
+                                150 000 <span class="r">a</span>
+                            </div>
+                            <div class="actions-block">
+                                <a href="" class="btn-cart hidden"></a>
+                                <div class="field-counter hidden">
+                                    <a href="" class="plus"></a>
+                                    <a href="" class="minus"></a>
+                                    <input type="text" value="1">
+                                </div>
+                                <div class="stock-info instock">В наличии</div>
+                            </div>
+                            <a href="" class="btn btn-block btn-buy">Купить</a>
+                            <div class="moving-block hidden">
+                                <a href="" class="btn-compare">К сравнению</a>
+                                <a href="" class="btn-favorites">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="cat-item item-stred" data-st="Sale">
+                        <div class="inner">
+                            <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                            </div>
+                            <a href="" class="photo-block">
+                                <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                            </a>
+                            <div class="rate-block">
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="full"></span>
+                                <span class="empty"></span>
+                                <span class="total">225</span>
+                            </div>
+                            <div class="price-block">
+                                150 000 <span class="r">a</span>
+                            </div>
+                            <div class="actions-block">
+                                <a href="" class="btn-cart hidden"></a>
+                                <div class="field-counter hidden">
+                                    <a href="" class="plus"></a>
+                                    <a href="" class="minus"></a>
+                                    <input type="text" value="1">
+                                </div>
+                                <div class="stock-info instock">В наличии</div>
+                            </div>
+                            <a href="" class="btn btn-block btn-buy">Купить</a>
+                            <div class="moving-block hidden">
+                                <a href="" class="btn-compare">К сравнению</a>
+                                <a href="" class="btn-favorites">В закладки</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /cat item slider -->
+    </div>
+    <!-- /popup cart -->
+    <!-- popup stock -->
+    <div id="popup-stock">
+        <div class="stock-tabs">
+            <ul>
+                <li><a href="#stock01"><span>Наличие в магазинах</span></a>
+                </li>
+                <li><a href="#stock02"><span>Под заказ в пунктах выдачи</span></a>
+                </li>
+                <li><a href="#stock03"><span>Доставка</span></a>
+                </li>
+            </ul>
+            <div id="stock01">
+                <table>
+                    <col class="col01">
+                        <col class="col02">
+                            <thead>
+                                <tr>
+                                    <th>Пункты выдачи</th>
+                                    <th>Количество</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="">г. Москва</a>, Варшавское ш., д. 143 а</td>
+                                    <td>10 шт</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">г. Санкт-Петербург</a> Варшавское ш., д. 143 а</td>
+                                    <td>> 15</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">г. Москва</a>, Северный бв., д. 13 а</td>
+                                    <td>Под заказ</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">г. Москва</a>, Северный бв., д. 13 а</td>
+                                    <td>Под заказ</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="">г. Санкт-Петербург</a> Большой пр., д. 143 а</td>
+                                    <td>Недоступно</td>
+                                </tr>
+                            </tbody>
+                </table>
+            </div>
+            <div id="stock02">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Пункты выдачи</th>
+                            <th>Количество</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">г. Москва</a>, Варшавское ш., д. 143 а</td>
+                            <td>10 шт</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Санкт-Петербург</a> Варшавское ш., д. 143 а</td>
+                            <td>> 15</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Москва</a>, Северный бв., д. 13 а</td>
+                            <td>Под заказ</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Москва</a>, Северный бв., д. 13 а</td>
+                            <td>Под заказ</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Санкт-Петербург</a> Большой пр., д. 143 а</td>
+                            <td>Недоступно</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="stock03">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Пункты выдачи</th>
+                            <th>Количество</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">г. Москва</a>, Варшавское ш., д. 143 а</td>
+                            <td>10 шт</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Санкт-Петербург</a> Варшавское ш., д. 143 а</td>
+                            <td>> 15</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Москва</a>, Северный бв., д. 13 а</td>
+                            <td>Под заказ</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Москва</a>, Северный бв., д. 13 а</td>
+                            <td>Под заказ</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">г. Санкт-Петербург</a> Большой пр., д. 143 а</td>
+                            <td>Недоступно</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /popup stock -->
+    <div id="btn-up"></div>
+
+
+
+
+
+</body>
+
+</html>

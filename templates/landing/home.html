@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <!-- catalog box -->
+            <section class="mobile-accordeon" id="down">
+                <header class="">
+                    <h2 class="title-toggle">Хиты продаж</h2>
+                </header>
+
+                {% include 'landing/home/top_products.html' %}
+            </section>
+            <!-- /catalog box -->
+            <!-- tile catalog-box -->
+            <section class="mobile-accordeon">
+                <header>
+                    <h2 class="title-toggle">Каталог</h2>
+                </header>
+                <div class="tile-catalog-box inner-mobile">
+                    <div class="items-wrap">
+                        <div class="item-wrap">
+                            <!-- item -->
+                            <a href="" class="tile-cat-item item01">
+                                <h3 class="title">Поршневые аппараты</h3>
+                                <img src="{% static 'templates/main' %}/img/tcat01.png" alt="">
+                            </a>
+                            <!-- /item -->
+                            <!-- item -->
+                            <a href="" class="tile-cat-item item02">
+                                <h3 class="title">Бензиновые аппараты</h3>
+                                <img src="{% static 'templates/main' %}/img/tcat02.png" alt="">
+                            </a>
+                            <!-- /item -->
+                        </div>
+                        <!-- item -->
+                        <a href="" class="tile-cat-item item03 item-dark item-large">
+                            <h3 class="title">Штукатурные станции</h3>
+                            <img src="{% static 'templates/main' %}/img/tcat03.png" alt="">
+                        </a>
+                        <!-- /item -->
+                        <!-- item -->
+                        <a href="" class="tile-cat-item item04 item-large">
+                            <h3 class="title">Дорожная разметка</h3>
+                            <img src="{% static 'templates/main' %}/img/tcat04.png" alt="">
+                        </a>
+                        <!-- /item -->
+                        <!-- item -->
+                        <a href="" class="tile-cat-item item05 item-large">
+                            <h3 class="title">Порошковое оборудование</h3>
+                            <img src="{% static 'templates/main' %}/img/tcat05.png" alt="">
+                        </a>
+                        <!-- /item -->
+                        <div class="item-wrap">
+                            <!-- item -->
+                            <a href="" class="tile-cat-item item09">
+                                <h3 class="title">Запчасти</h3>
+                                <img src="{% static 'templates/main' %}/img/tcat09.png" alt="">
+                            </a>
+                            <!-- /item -->
+                            <!-- item -->
+                            <a href="" class="tile-cat-item item10 item-att">
+                                <h3 class="title">Краскопульты</h3>
+                                <img src="{% static 'templates/main' %}/img/tcat10.png" alt="">
+                            </a>
+                            <!-- /item -->
+                        </div>
+                        <!-- item -->
+                        <a href="" class="tile-cat-item item06 item-att item-large">
+                            <h3 class="title">Мембранные агрегаты</h3>
+                            <img src="{% static 'templates/main' %}/img/tcat06.png" alt="">
+                        </a>
+                        <!-- /item -->
+                        <!-- item -->
+                        <a href="" class="tile-cat-item item07 item-large">
+                            <h3 class="title">Оборудование б/у</h3>
+                            <img src="{% static 'templates/main' %}/img/tcat07.png" alt="">
+                        </a>
+                        <!-- /item -->
+                        <!-- item -->
+                        <a href="" class="tile-cat-item item08 item-dark item-large">
+                            <h3 class="title">Баки для краски</h3>
+                            <img src="{% static 'templates/main' %}/img/tcat08.png" alt="">
+                        </a>
+                        <!-- /item -->
+                    </div>
+                </div>
+            </section>
+            <!-- /tile catalog-box -->
+            <!-- about box -->
+            <article class="about-box">
+                <header>
+                    <h2>“Окраска.РФ" - качественное и доступное окрасочное оборудование.</h2>
+                </header>
+                <div class="mobile">
+                    <p class="">-"Мы гарантируем Вам качество и самую низкую цену в России на окрасочное оборудование."</p>
+                    <p class="">Почему выгодно купить оборудование для окраски у нас?</p>
+                    <p>Более 12 лет с неизменным именем на рынке окрасочного оборудования!</p>
+                    <p class="">Минимальные цены за счёт прямых поставок с наших заводов (см.видео про наш бренд).</p>
+                    <p>Широкий ассортимент и наличие товара в наших магазинах по всей России.</p>
+                </div>
+                <p>Гарантия качества товара и сервисная поддержка, мы дорожим именем и репутацией.</p>
+                <p>Вы можете испытать оборудование для окраски до покупки на своём материале. Это Ваше уверенность в правильном выборе товара и выгодной покупке!</p>
+                <a href="" class="btn">Подробнее</a>
+            </article>
+            <!-- /about-box -->
+{% endblock content %}

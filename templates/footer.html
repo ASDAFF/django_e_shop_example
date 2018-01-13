@@ -1,0 +1,184 @@
+{% load static %}
+<footer class="footer" itemscope itemtype="http://schema.org/Organization">
+    <div class="inner-wrap">
+        <!-- menu -->
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="">Меню</a>
+                    <ul>
+                        <li><a href="">Поршневые аппараты</a>
+                        </li>
+                        <li><a href="">Мембранные агрегаты</a>
+                        </li>
+                        <li><a href="">Бензиновые аппараты</a>
+                        </li>
+                        <li><a href="">Порошковое оборудование</a>
+                        </li>
+                        <li><a href="">Баки для краски</a>
+                        </li>
+                        <li><a href="">Запчасти</a>
+                        </li>
+                        <li><a href="">Краскопульты</a>
+                        </li>
+                        <li><a href="">Дорожная разметка</a>
+                        </li>
+                        <li><a href="">Оборудование б/у</a>
+                        </li>
+                        <li><a href="">Штукатурные станции</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Покупателям</a>
+                    <ul>
+                        <li><a href="">Оформление покупки</a>
+                        </li>
+                        <li><a href="">Способы оплаты</a>
+                        </li>
+                        <li><a href="">Способы и стоимость доставки</a>
+                        </li>
+                        <li><a href="">Гарантии</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Новости</a>
+                    <ul>
+                        <li><a href="">Блог</a>
+                        </li>
+                        <li><a href="">Фотогалерея</a>
+                        </li>
+                        <li><a href="">Частые вопросы</a>
+                        </li>
+                        <li><a href="">Контакты</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="contacts-item">
+                    <a href="">Контакты</a>
+                    <span class="hidden-item" itemprop="name">AirLess</span>
+                    <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <li>Тел: <span itemprop="telephone">8 (449) 344 - 07 - 07</span>
+                        </li>
+                        <li itemprop="telephone">326 - 07 - 07</li>
+                        <li itemprop="addressLocality">Адрес: Санкт-Петербург,</li>
+                        <li itemprop="streetAddress">Невский пр. 14</li>
+                    </ul>
+                </li>
+                <li class="pay-item">
+                    <a href="" class="pay-title">Принимаем к оплате</a>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'templates/main' %}/img/icons/pay01.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'templates/main' %}/img/icons/pay02.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'templates/main' %}/img/icons/pay03.png" alt="" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="{% static 'templates/main' %}/img/icons/pay04.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /menu -->
+        <!-- points -->
+        <div class="points-block">
+            <div class="map-block">
+                <img src="{% static 'templates/main' %}/img/main/map.png" alt="">
+            </div>
+            <div class="title">Пункты выдачи и продаж</div>
+            <div class="text-block hidden-mobile">Единая справочная о наличии товара во всех магазинах: 8(800)555-09-74 (зв.бесплатный)!
+                <br>Единый контакт для электронной корреспонденции:
+                <br>e-mail: <span itemprop="email">info@dino-power.ru</span>
+            </div>
+        </div>
+        <!-- /points -->
+        <!-- subscribe -->
+        <div class="subscribe-block">
+            <div class="title">Подписка</div>
+            <form action="/" class="frm hidden-mobile">
+                <div class="inner-block">
+                    <div class="field-mail">
+                        <input type="email" placeholder="Электронная почта" data-validation="email">
+                    </div>
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
+            <script>
+                $.validate({
+                    modules: 'email'
+                });
+            </script>
+        </div>
+        <!-- /subscribe -->
+        <!-- representative -->
+        <div class="representative-block">
+            <div class="title">Наши представители</div>
+            <div class="icons-block hidden-mobile">
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r01.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r02.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r03.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r04.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r05.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r06.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r07.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r08.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r09.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r10.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r11.png" alt="">
+                </a>
+                <a href="">
+                    <img src="{% static 'templates/main' %}/img/icons/r12.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /representative -->
+        <!-- soc -->
+        <div class="soc-block">
+            <a href=""><span class="i i-soc01-n"></span></a>
+            <a href=""><span class="i i-soc02-n"></span></a>
+            <a href=""><span class="i i-soc03-n"></span></a>
+            <a href=""><span class="i i-soc04-n"></span></a>
+            <a href=""><span class="i i-soc05-n"></span></a>
+        </div>
+        <!-- /soc -->
+        <!-- copy -->
+        <div class="copy-block desktop">Копирование материалов с сайта без согласия не допускается! © OOO«Химбалт» 2003-2015 <span>(ст.1270 ГК РФ; п.1 п.1 ст.1274 ГК РФ)</span>.</div>
+        <div class="copy-block mobile">© OOO«Химбалт» 2003-2015</div>
+        <!-- /copy -->
+    </div>
+</footer>

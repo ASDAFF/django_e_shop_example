@@ -1,0 +1,319 @@
+{% load static %}
+<div class="catalog-box inner-mobile">
+    {{ products }}
+    <!-- item -->
+    <div class="item-wrap" itemscope itemtype="http://schema.org/Product">
+        <div class="cat-item">
+            <div class="st-block">
+                <div class="st-red">Sale</div>
+                <div class="st-blue">New</div>
+                <div class="st-yellow">Хит</div>
+            </div>
+            <div class="inner">
+                <div class="title-block"><a href="" itemprop="name">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="./img/cat01.jpg" class="photo-block" itemprop="image">
+                    <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                </a>
+                <span class="hidden-item" itemprop="description">Описание товара</span>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <span>150 000</span>  <span class="r">a</span>
+                    <meta itemprop="price" content="150000.00">
+                    <meta itemprop="priceCurrency" content="RUB">
+                </div>
+                <div class="actions-block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <a href="" class="btn-cart hidden"></a>
+                    <div class="field-counter hidden">
+                        <a href="" class="plus"></a>
+                        <a href="" class="minus"></a>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="stock-info instock">В наличии</div>
+                    <link itemprop="availability" href="http://schema.org/InStock">
+                </div>
+                <a href="" class="btn btn-block btn-buy">Купить</a>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- item -->
+    <div class="item-wrap" itemscope itemtype="http://schema.org/Product">
+        <div class="cat-item">
+            <div class="inner">
+                <div class="title-block"><a href="" itemprop="name">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="./img/cat02.jpg" class="photo-block" itemprop="image">
+                    <img src="{% static 'templates/main' %}/img/cat02.jpg" alt="">
+                </a>
+                <span class="hidden-item" itemprop="description">Описание товара</span>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <div class="old">250 000 <span class="r">a</span>
+                    </div>
+                    <div class="new">190 000 <span class="r">a</span>
+                    </div>
+                    <meta itemprop="price" content="250000.00">
+                    <meta itemprop="priceCurrency" content="RUB">
+                </div>
+                <div class="actions-block" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                    <a href="" class="btn-cart hidden"></a>
+                    <div class="field-counter hidden">
+                        <a href="" class="plus"></a>
+                        <a href="" class="minus"></a>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="stock-info instock">В наличии</div>
+                    <link itemprop="availability" href="http://schema.org/InStock">
+                </div>
+                <a href="" class="btn btn-block btn-buy">Купить</a>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- item -->
+    <div class="item-wrap">
+        <div class="cat-item item-outstock">
+            <div class="inner">
+                <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="" class="photo-block">
+                    <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                </a>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block">
+                    150 000 <span class="r">a</span>
+                </div>
+                <div class="actions-block">
+                    <div class="stock-info outstock">Нет в наличии</div>
+                </div>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- item -->
+    <div class="item-wrap">
+        <div class="cat-item">
+            <div class="inner">
+                <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="" class="photo-block">
+                    <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                </a>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block">
+                    150 000 <span class="r">a</span>
+                </div>
+                <div class="actions-block">
+                    <a href="" class="btn-cart hidden"></a>
+                    <div class="field-counter hidden">
+                        <a href="" class="plus"></a>
+                        <a href="" class="minus"></a>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="stock-info instock">В наличии</div>
+                </div>
+                <a href="" class="btn btn-block btn-buy">Купить</a>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- item -->
+    <div class="item-wrap">
+        <div class="cat-item">
+            <div class="inner">
+                <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="" class="photo-block">
+                    <img src="{% static 'templates/main' %}/img/cat02.jpg" alt="">
+                </a>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block">
+                    <div class="old">250 000 <span class="r">a</span>
+                    </div>
+                    <div class="new">190 000 <span class="r">a</span>
+                    </div>
+                </div>
+                <div class="actions-block">
+                    <a href="" class="btn-cart hidden"></a>
+                    <div class="field-counter hidden">
+                        <a href="" class="plus"></a>
+                        <a href="" class="minus"></a>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="stock-info instock">В наличии</div>
+                </div>
+                <a href="" class="btn btn-block btn-buy">Купить</a>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- item -->
+    <div class="item-wrap">
+        <div class="cat-item item-outstock">
+            <div class="inner">
+                <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="" class="photo-block">
+                    <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                </a>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block">
+                    150 000 <span class="r">a</span>
+                </div>
+                <div class="actions-block">
+                    <div class="stock-info outstock">Нет в наличии</div>
+                </div>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- item -->
+    <div class="item-wrap">
+        <div class="cat-item">
+            <div class="inner">
+                <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="" class="photo-block">
+                    <img src="{% static 'templates/main' %}/img/cat01.jpg" alt="">
+                </a>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block">
+                    150 000 <span class="r">a</span>
+                </div>
+                <div class="actions-block">
+                    <a href="" class="btn-cart hidden"></a>
+                    <div class="field-counter hidden">
+                        <a href="" class="plus"></a>
+                        <a href="" class="minus"></a>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="stock-info instock">В наличии</div>
+                </div>
+                <a href="" class="btn btn-block btn-buy">Купить</a>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- item -->
+    <div class="item-wrap">
+        <div class="cat-item">
+            <div class="inner">
+                <div class="title-block"><a href="">ASpro-2000 окрасочный аппарат (агрегат)</a>
+                </div>
+                <a href="" class="photo-block">
+                    <img src="{% static 'templates/main' %}/img/cat02.jpg" alt="">
+                </a>
+                <div class="rate-block">
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="full"></span>
+                    <span class="empty"></span>
+                    <span class="total">225</span>
+                </div>
+                <div class="price-block">
+                    <div class="old">250 000 <span class="r">a</span>
+                    </div>
+                    <div class="new">190 000 <span class="r">a</span>
+                    </div>
+                </div>
+                <div class="actions-block">
+                    <a href="" class="btn-cart hidden"></a>
+                    <div class="field-counter hidden">
+                        <a href="" class="plus"></a>
+                        <a href="" class="minus"></a>
+                        <input type="text" value="1">
+                    </div>
+                    <div class="stock-info instock">В наличии</div>
+                </div>
+                <a href="" class="btn btn-block btn-buy">Купить</a>
+                <div class="moving-block hidden">
+                    <a href="" class="btn-compare">К сравнению</a>
+                    <a href="" class="btn-favorites">В закладки</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /item -->
+    <!-- more -->
+    <a href="" class="btn-more">Показать еще</a>
+    <!-- /more -->
+</div>

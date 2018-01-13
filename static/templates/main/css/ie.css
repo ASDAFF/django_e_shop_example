@@ -1,0 +1,11 @@
+.chk input[type="checkbox"],
+.rd input[type="radio"] {
+	left: 0 !important;
+	top: 0 !important;
+}
+.chk label:after,
+.rd label:after,
+.chk label:before,
+.rd label:before {
+	display: none !important;
+}

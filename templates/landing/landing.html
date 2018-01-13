@@ -1,0 +1,21 @@
+{% load static %}
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+</head>
+<body>
+    <h1 class="title">HELLO, {{ name }}</h1>
+    <h2>Today is {{ current_day }}</h2>
+    <div>
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" >Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
